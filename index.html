@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Boolfix</title>
+  </head>
+  <body>
+    <input id="utente"type="text" name="" value="">
+    <button id="cerca"type="button" name="button">Cerca</button>
+    <div class="film">
+
+    </div>
+
+    <!-- Template -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <ul class = 'lista'>
+        <li> {{titolo}} </li>
+        <li> {{titolo_originale}} </li>
+        <li> {{lingua}} </li>
+        <li> {{voto}} </li>
+      </ul>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main/main.js"></script>
+  </body>
+</html>
