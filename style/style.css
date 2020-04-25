@@ -11,3 +11,72 @@
 #utente {
   margin: 30px;
 }
+/* Qui iniziano le regole dell'header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  padding-left: 20px;
+}
+
+.form {
+  padding-right: 20px;
+}
+body {
+  background-color: gray;
+}
+/* Qui iniziano le regole del main */
+
+.film {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lista {
+  position: relative;
+  color: white;
+}
+
+.info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  height: 516px;
+  width: 342px;
+  display: none;
+}
+.lista:hover .info {
+  display: block;
+}
+.immagine {
+  height: 516px;
+}
+.no-img {
+  width: 342px;
+  height: 516px;
+}
+
+i {
+  color: yellow;
+}
+
+.info div {
+  padding: 20px;
+}
+#tipo {
+  background-color: red;
+  width: 342px;
+  position: absolute;
+  bottom: 0;
+}
+
+#trama {
+  max-height: 100%;
+}

@@ -6,24 +6,34 @@
     <script src="https://kit.fontawesome.com/29d28f1b10.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
-    <title>Boolfix</title>
+    <title>Boolflix</title>
   </head>
   <body>
-    <input id="utente"type="text" name="" value="">
-    <button id="cerca"type="button" name="button">Cerca</button>
-    <div class="film">
+    <header>
+      <h1>BOOLFLIX</h1>
+      <div class="form">
+        <input id="utente"type="text" name="" value="">
+        <button id="cerca"type="button" name="button">Cerca</button>
+      </div>
+    </header>
 
-    </div>
+    <main class="film">
+
+    </main>
 
     <!-- Template -->
     <script id="entry-template" type="text/x-handlebars-template">
-      <ul class ="lista">
-        <li> {{{immagine}}}</li>
-        <li> {{titolo}} </li>
-        <li> {{titolo_originale}} </li>
-        <li> {{{lingua}}} </li>
-        <li> {{{voto}}} </li>
-      </ul>
+      <div class ="lista">
+        <div id='immagine'> {{{immagine}}}</div>
+        <div class="info">
+          <div> Titolo: {{titolo}} </div>
+          <div> Titolo originale: {{titolo_originale}} </div>
+          <div> Lingua: {{{lingua}}} </div>
+          <div> Voto: {{{voto}}} </div>
+          <div id='trama'> Trama: {{trama}} </div>
+        </div>
+        <div id='tipo'> {{tipo}}</div>
+      </div>
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
